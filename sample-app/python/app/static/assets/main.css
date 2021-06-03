@@ -1,0 +1,30 @@
+:root {
+    --text: #E4E5E7;
+    --background: #000;
+    --brand: 4, 198, 194;
+    --headline: #FFF;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    min-height: 100vh;
+  }
+
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--text);
+    text-align: center;
+    background-image: url(/static/assets/background.png);
+    background-position: 10% 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--background);
+  }
+
+  
