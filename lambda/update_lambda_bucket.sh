@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ASSET_DIR="lambda"
+ASSET_DIR="assets"
 TEMP_DIR="/tmp"
 UPLOAD_REGION="ap-northeast-1"
 UPLOAD_BUCKET="drecom-lambda"
