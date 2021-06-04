@@ -10,7 +10,7 @@ UPLOAD_FILE_LIB="lambda_lib.zip"
 
 # check current aws profile name
 CURRENT_PROFILE=`aws configure list | grep profile | awk '{print $2}'`
-echo "Current aws profile is <- $CURRENT_PROFILE -> "
+echo "Current aws profile is [ $CURRENT_PROFILE ] "
 echo "Is that OK with you ? yes/no"
 read INPUT
 # get user confirm
