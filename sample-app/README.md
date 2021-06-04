@@ -18,6 +18,6 @@ $ aws ecr get-login-password | docker login --username AWS --password-stdin <you
 > Login Succeeded
 
 $ cd <Pick your favorite programming languages>
-$ docker build -t <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:latest . 
-$ docker push <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:latest
+$ docker build -t <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:release . 
+$ docker push <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:release
 ```
