@@ -5,8 +5,8 @@ TEMP_DIR="/tmp"
 UPLOAD_REGION="ap-northeast-1"
 UPLOAD_BUCKET="drecom-lambda"
 UPLOAD_FILE_ALL="lambda.zip"
-UPLOAD_FILE_MAIN="lambda_main.zip"
-UPLOAD_FILE_LIB="lambda_lib.zip"
+UPLOAD_FILE_MAIN="lambda-main.zip"
+UPLOAD_FILE_LIB="lambda-lib.zip"
 
 # check current aws profile name
 CURRENT_PROFILE=`aws configure list | grep profile | awk '{print $2}'`
