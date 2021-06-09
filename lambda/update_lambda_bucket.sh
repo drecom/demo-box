@@ -4,24 +4,32 @@ ASSET_DIR="assets"
 TEMP_DIR="/tmp"
 UPLOAD_REGION="ap-northeast-1"
 UPLOAD_BUCKET="drecom-terraform-workshop"
+UPLOAD_PATH=""
+UPLOAD_FULL_PATH=""
 UPLOAD_FILE_ALL="lambda.zip"
 UPLOAD_FILE_MAIN="lambda-main.zip"
 UPLOAD_FILE_LIB="lambda-lib.zip"
 
 # set s3 path
 if [ $# -eq 2 ]; then
-  while getopts d: OPT
+  while getopts d:p: OPT
   do
     case $OPT in
         d ) UPLOAD_PATH="$OPTARG"
             echo "S3 bucket's full path set to [ s3://${UPLOAD_BUCKET}/${UPLOAD_PATH} ]" ;;
-        * ) echo "Usage: $0 [-d <s3 bucket's path>] "
+        p ) UPLOAD_FULL_PATH="$OPTARG"
+            UPLOAD_PATH=`echo ${UPLOAD_FULL_PATH} | cut -d "/" -f 2`
+            echo "S3 bucket's full path set to [ s3://${UPLOAD_BUCKET}/${UPLOAD_PATH} ]" ;;
+        * ) echo "Usage:"
+            echo "      $0 [-d <s3 bucket's path>] "
+            echo "      $0 [-p <s3 bucket's full path>] "
             exit 1 ;;
     esac
   done
 else
   echo "Usage:"
   echo "  $0 -d <s3 bucket's path>" 1>&2
+  echo "  $0 -p <s3 bucket's full path>" 1>&2
   echo "Like: $0 -d `whoami`-lambda"
   echo "S3 bucket's full path need to match the <aws-s3-lambda-bucket-name> which outputted by terraform."
   exit 1
