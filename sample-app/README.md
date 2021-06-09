@@ -18,6 +18,7 @@ $ aws ecr get-login-password | docker login --username AWS --password-stdin <you
 > Login Succeeded
 
 $ cd <Pick your favorite programming languages>
+# tag needs to match AppRunner's configure
 $ docker build -t <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:release . 
 $ docker push <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>:release
 ```
