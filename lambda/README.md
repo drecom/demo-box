@@ -1,5 +1,5 @@
 # Update lambda bucket
-A lambda function uploader work with [Terraform Workshop](https://git.drecom.jp/infrastructure/terraform-oss-aws)
+A lambda function uploader work with [drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)
 
 ## Packaging & Uploading lambda function
 __Run this before you apply workspace system__

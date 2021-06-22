@@ -1,12 +1,12 @@
 # i18n
 [日本語版はこちらになります](./README_JP.md)
 # Who Am I ?
-A toolbox work with [Terraform Workshop](https://git.drecom.jp/infrastructure/terraform-oss-aws)
+A toolbox work with [drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)
 
 # Getting Started
-See [Terraform Workshop](https://git.drecom.jp/infrastructure/terraform-oss-aws)'s README.md for more information.
+See [drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)'s README.md for more information.
 ```
-$ git clone ssh://git@git.drecom.jp:10022/infrastructure/tool-aws-oss.git
+$ git clone ssh://git@github.com:drecom/demo-box.git
 # Setting your AWS configure first
 $ aws configure --profile terraform-onboarding
 $ export AWS_DEFAULT_PROFILE=terraform-onboarding

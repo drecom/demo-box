@@ -1,6 +1,6 @@
 # Drecom Workshop Example
 ## How to use
-It works with [Terraform Onboarding](https://git.drecom.jp/infrastructure/terraform-oss-aws).  
+It works with [drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding).  
 You can build & push these example applications to AWS ECR.
 
 ## Prerequisite
