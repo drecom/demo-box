@@ -5,6 +5,7 @@
 背景は[drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)の方のREADMEにご参照ください
 ```
 $ git clone git@github.com:drecom/demo-box.git
+$ cd demo-box
 # AWS情報をセット
 $ aws configure --profile terraform-onboarding
 $ export AWS_DEFAULT_PROFILE=terraform-onboarding

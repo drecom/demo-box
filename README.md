@@ -7,6 +7,7 @@ A toolbox work with [drecom/terraform-onboarding](https://github.com/drecom/terr
 See [drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)'s README.md for more information.
 ```
 $ git clone git@github.com:drecom/demo-box.git
+$ cd demo-box
 # Setting your AWS configure first
 $ aws configure --profile terraform-onboarding
 $ export AWS_DEFAULT_PROFILE=terraform-onboarding
