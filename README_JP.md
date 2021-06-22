@@ -4,7 +4,7 @@
 # 利用方法
 背景は[drecom/terraform-onboarding](https://github.com/drecom/terraform-onboarding)の方のREADMEにご参照ください
 ```
-$ git clone ssh://git@github.com:drecom/demo-box.git
+$ git clone git@github.com:drecom/demo-box.git
 # AWS情報をセット
 $ aws configure --profile terraform-onboarding
 $ export AWS_DEFAULT_PROFILE=terraform-onboarding
