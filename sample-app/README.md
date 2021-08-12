@@ -10,8 +10,11 @@ You can build & push these example applications to AWS ECR.
 
 ## Usage
 ```
+$ export AWS_DEFAULT_PROFILE=terraform-onboarding
+or
 $ export AWS_ACCESS_KEY=""
 $ export AWS_SECRET_ACCESS_KEY=""
+
 # After applied workspace system, you should get a URL called 'ecr_url's
 # Just copy it to the path below
 $ aws ecr get-login-password | docker login --username AWS --password-stdin <your-aws-acount>.dkr.ecr.<region>.amazonaws.com/<your ecr repository name>

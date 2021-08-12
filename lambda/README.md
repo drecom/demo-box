@@ -8,6 +8,4 @@ $ aws configure --profile terraform-onboarding
 $ export AWS_DEFAULT_PROFILE=terraform-onboarding
 $ chmod +x update_lambda_bucket.sh
 $ ./update_lambda_bucket.sh -p <s3 bucket's full path>
-or
-$ ./update_lambda_bucket.sh -d <s3 bucket's path>
 ```
